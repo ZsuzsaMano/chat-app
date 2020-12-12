@@ -3,7 +3,7 @@ import React from 'react';
 const Loader = () => {
 
 return(
-  <div>
+  <div id="loader">
   <svg width="413" height="379" viewBox="0 0 413 379" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="chat 1">
   <g id="mobile">

@@ -16,11 +16,19 @@
   }
 
   button {
+    height: 100%;
     border: none;
     margin: 8px;
     padding: 8px;
     border-radius: 5px;
     color: white;
     background-color: $buttonBG;
+    transition: 0.45s lineal;
+
+    &:hover {
+      color: $buttonBG;
+      background-color: white;
+      box-shadow: -2px -2px 2px $inputborder;
+    }
   }
 }

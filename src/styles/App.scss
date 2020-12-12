@@ -5,6 +5,10 @@
 }
 $namecolor: #b3bcc3;
 $chatborder: #d4dade;
+$mychatbubble: #fcf6c5;
+$buttonBG: #ff876d;
+$inputboxBG: #3798d4;
+$inputborder: #2e77a4;
 @mixin flex($justify, $align, $direction) {
   display: flex;
   flex-wrap: wrap;
@@ -12,11 +16,6 @@ $chatborder: #d4dade;
   align-items: $align;
   flex-direction: $direction;
 }
-//colors original
-// $mychatbox: #fcf6c5;
-// $otherchatbox: #fff;
-// $button: #ff876d;
-// $formbar: #3798d4;
 @import 'mainbox';
 @import 'chatbubble';
 @import 'inputbar';

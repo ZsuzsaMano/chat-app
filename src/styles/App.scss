@@ -17,5 +17,6 @@ $inputborder: #2e77a4;
   flex-direction: $direction;
 }
 @import 'mainbox';
+@import 'loader';
 @import 'chatbubble';
 @import 'inputbar';

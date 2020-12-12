@@ -9,3 +9,5 @@ const ChatBubble = () =>{
   </div>
   )
 }
+
+export default ChatBubble;

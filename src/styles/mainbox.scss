@@ -4,7 +4,7 @@
   width: clamp(200px, 90vw, 600px);
   background: url("../img/Body BG.png");
   height: 85vh;
-  border: 2px solid black;
+  border: 2px solid $chatborder;
   margin: 0 auto;
   padding: 1rem 1.5rem;
 }

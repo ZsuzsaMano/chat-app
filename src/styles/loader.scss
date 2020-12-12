@@ -5,21 +5,21 @@ svg {
 }
 
 #circleboy {
-  animation: circleColor 2s linear 2s infinite alternate;
+  animation: circleColor 1s linear 1s infinite alternate;
 }
 
 #circlegirl {
-  animation: circleColor 2s linear infinite alternate;
+  animation: circleColor 1s linear infinite alternate;
 }
 
 #bubbleboy,
 #textboy {
-  animation: displayChat 2s linear 2s infinite alternate;
+  animation: displayChat 1s linear 1s infinite alternate;
 }
 
 #bubblegirl,
 #textgirl {
-  animation: displayChat 2s linear infinite alternate;
+  animation: displayChat 1s linear infinite alternate;
 }
 @keyframes circleColor {
   0% {

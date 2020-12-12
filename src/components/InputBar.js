@@ -3,8 +3,8 @@ import React from 'react';
 const InputBar = () => {
   return(
     <div>
-    <form action="">
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <form action="" className="inputbar">
+    <textarea name="message" id="message" placeholder="Message"></textarea>
     <button>SEND</button>
     </form>
     </div>

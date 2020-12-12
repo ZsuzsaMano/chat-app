@@ -1,0 +1,16 @@
+//main: App.scss
+
+.chatbubble {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid $chatborder;
+  border-radius: 5px;
+  max-width: 80%;
+
+  &__date,
+  &__name {
+    color: $namecolor;
+    font-size: 0.9rem;
+    padding: 0.3em 0;
+  }
+}

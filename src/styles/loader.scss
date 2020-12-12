@@ -1,0 +1,57 @@
+//main: App.scss
+
+svg {
+  width: 100%;
+}
+
+#circleboy {
+  animation: circleColor 2s linear 2s infinite alternate;
+}
+
+#circlegirl {
+  animation: circleColor 2s linear infinite alternate;
+}
+
+#bubbleboy,
+#textboy {
+  animation: displayChat 2s linear 2s infinite alternate;
+}
+
+#bubblegirl,
+#textgirl {
+  animation: displayChat 2s linear infinite alternate;
+}
+@keyframes circleColor {
+  0% {
+    fill: $inputborder;
+  }
+
+  50% {
+    fill: $inputboxBG;
+  }
+
+  52% {
+    fill: $chatborder;
+  }
+
+  100% {
+    fill: $chatborder;
+  }
+}
+@keyframes displayChat {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  52% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

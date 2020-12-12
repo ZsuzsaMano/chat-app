@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+$namecolor: #b3bcc3;
+$chatborder: #d4dade;
 @mixin flex($justify, $align, $direction) {
   display: flex;
   flex-wrap: wrap;
@@ -17,3 +19,4 @@
 // $formbar: #3798d4;
 @import 'mainbox';
 @import 'chatbubble';
+@import 'inputbar';

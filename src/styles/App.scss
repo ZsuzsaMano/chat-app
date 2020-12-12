@@ -16,6 +16,10 @@ $inputborder: #2e77a4;
   align-items: $align;
   flex-direction: $direction;
 }
+
+.hidden {
+  display: none;
+}
 @import 'mainbox';
 @import 'loader';
 @import 'chatbubble';

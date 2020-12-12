@@ -1,6 +1,7 @@
 //main: App.scss
 
 .chatbubble {
+  display: none;
   background-color: #fff;
   padding: 1rem;
   margin: 0.5rem;
@@ -18,5 +19,7 @@
 }
 
 .mymessage {
-  color: $mychatbubble;
+  background-color: $mychatbubble;
+  position: relative;
+  left: 16%;
 }

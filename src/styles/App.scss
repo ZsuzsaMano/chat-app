@@ -10,3 +10,10 @@
   align-items: $align;
   flex-direction: $direction;
 }
+//colors original
+// $mychatbox: #fcf6c5;
+// $otherchatbox: #fff;
+// $button: #ff876d;
+// $formbar: #3798d4;
+@import 'mainbox';
+@import 'chatbubble';

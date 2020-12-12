@@ -1,0 +1,9 @@
+//main: App.scss
+
+.main__box {
+  width: clamp(200px, 90vw, 600px);
+  background: url("../img/Body BG.png");
+  height: 90vh;
+  border: 2px solid black;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+//main: App.scss
+
+.inputbar {
+  background-color: blue;
+  width: clamp(200px, 90vw, 600px);
+  margin: 0 auto;
+
+  textarea {
+    margin: 8px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 70%;
+    vertical-align: middle;
+  }
+
+  button {
+    border: none;
+    margin: 8px;
+    padding: 8px;
+  }
+}

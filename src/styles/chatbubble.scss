@@ -3,14 +3,20 @@
 .chatbubble {
   background-color: #fff;
   padding: 1rem;
+  margin: 0.5rem;
   border: 1px solid $chatborder;
   border-radius: 5px;
   max-width: 80%;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 
   &__date,
   &__name {
     color: $namecolor;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
     padding: 0.3em 0;
   }
+}
+
+.mymessage {
+  color: $mychatbubble;
 }

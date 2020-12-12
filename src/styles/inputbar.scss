@@ -1,7 +1,7 @@
 //main: App.scss
 
 .inputbar {
-  background-color: blue;
+  background-color: $inputboxBG;
   width: clamp(200px, 90vw, 600px);
   margin: 0 auto;
 
@@ -17,5 +17,8 @@
     border: none;
     margin: 8px;
     padding: 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: $buttonBG;
   }
 }

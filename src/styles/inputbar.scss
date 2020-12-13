@@ -4,9 +4,20 @@
   background-color: $inputboxBG;
   width: clamp(200px, 90vw, 600px);
   margin: 0 auto;
+  padding: 8px;
+
+  .yourname {
+    button {
+      padding: 3px;
+    }
+  }
+
+  #name {
+    padding: 4px;
+    margin: 8px;
+  }
 
   textarea {
-    margin: 8px;
     border-radius: 5px;
     padding: 8px;
     width: 70%;
@@ -15,11 +26,14 @@
     resize: none;
   }
 
+  .message button {
+    padding: 8px;
+  }
+
   button {
     height: 100%;
     border: none;
     margin: 8px;
-    padding: 8px;
     border-radius: 5px;
     color: white;
     background-color: $buttonBG;

@@ -1,3 +1,19 @@
+## ideas for the app (might not have time for)
+<ol>
+<li>Dark mode</li>
+<li>Change name button after name</li>
+<li>format date better</li>
+<li>Option to send img</li>
+<li>name to local storage</li>
+<li>write a better README.md  </li>
+</ol>
+
+## Sass autocompile
+
+I use this to autocompile all styles into App.min.css
+https://atom.io/packages/sass-autocompile
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

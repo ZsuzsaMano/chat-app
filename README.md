@@ -6,6 +6,8 @@
 <li>Option to send img</li>
 <li>name to local storage</li>
 <li>write a better README.md  </li>
+<li>login</li>
+<li>code of conduct</li>
 </ol>
 
 ## Sass autocompile

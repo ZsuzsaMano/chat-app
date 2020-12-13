@@ -1,6 +1,7 @@
 import React from 'react';
 import ChatBubble from './ChatBubble';
 import Loader from './Loader';
+import ChatContextProvider from '../context/ChatContext';
 
 const MainBox = () =>{
   setTimeout(()=>{
@@ -10,8 +11,11 @@ const MainBox = () =>{
 
   return(
   <div className="main__box">
+
 <Loader/>
+<ChatContextProvider>
 <ChatBubble/>
+</ChatContextProvider>
   </div>
   )
 }

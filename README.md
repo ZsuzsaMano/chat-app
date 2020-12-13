@@ -10,6 +10,18 @@
 <li>code of conduct</li>
 </ol>
 
+## my technology choices
+React, Sass,
+
+## How I tackled the task
+<ol>
+<li> setting up react, creating folders/files </li>
+<li> Basic HTML</li>
+<li>Basic CSS</li>
+<li>details of CSS + loader</li>
+<li>getting values from form, saving in context</li>
+</ol>
+
 ## Sass autocompile
 
 I use this to autocompile all styles into App.min.css

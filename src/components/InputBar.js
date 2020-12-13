@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
+import {ChatContext} from '../context/ChatContext'
 
 const InputBar = () => {
-  const [yourName, setYourname] = useState('')
-
+  const{yourName, setYourname} = useContext(ChatContext);
   const getYourname = e =>{
   const yournameValue = document.getElementById('yourname').value;
   const yournameForm = document.querySelector('.yourname');

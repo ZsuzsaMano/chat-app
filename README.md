@@ -1,6 +1,7 @@
 ## ideas for the app (might not have time for)
 <ol>
 <li>Dark mode</li>
+<li>animation on buttons</li>
 <li>Change name button after name</li>
 <li>format date better</li>
 <li>Option to send img</li>

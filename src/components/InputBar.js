@@ -1,29 +1,35 @@
-import React, {useContext} from 'react';
-import {ChatContext} from '../context/ChatContext'
+import React, { useContext } from 'react';
+import { ChatContext } from '../context/ChatContext';
 
 const InputBar = () => {
-  const{yourName, setYourname} = useContext(ChatContext);
-  const getYourname = e =>{
-  const yournameValue = document.getElementById('yourname').value;
-  const yournameForm = document.querySelector('.yourname');
-  e.preventDefault();
-  setYourname(yournameValue);
-  yournameForm.innerHTML = `<p>${yourName}<p>`;}
+  const{ yourName, setYourname, message, setMessage, postMsg } = useContext(ChatContext);
 
-  return(
+  const handleOnChangeName = (e)=> {
+    setYourname(e.target.value);
+  };
+
+  const handleOnChangeMessage = (e)=> {
+    setMessage(e.target.value);
+  };
+
+  const handlePostMsg = (e)=> {
+    e.preventDefault();
+    postMsg();
+  };
+
+  return (
     <div>
     <form action="" className="inputbar">
       <div className="yourname">
-        <input type="text"id="yourname" name="yourname" placeholder="Your name"/>
-        <button onClick={getYourname}>Save</button>
+        <input type="text"id="yourname" onChange={handleOnChangeName} name="yourname" value={yourName} placeholder="Your name"/>
       </div>
       <div className="message">
-        <textarea name="message" id="message" placeholder="Message"></textarea>
-        <button>SEND</button>
+        <textarea name="message" id="message" placeholder="Message" onChange = {handleOnChangeMessage}></textarea>
+        <button onClick= {handlePostMsg}>SEND</button>
       </div>
     </form>
     </div>
-  )
-}
+  );
+};
 
 export default InputBar;

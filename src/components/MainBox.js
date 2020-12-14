@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ChatBubble from './ChatBubble';
 import Loader from './Loader';
 import ChatContextProvider from '../context/ChatContext';
+import { ChatContext } from '../context/ChatContext';
+import token from '../config';
 
-const MainBox = () =>{
-  setTimeout(()=>{
+const MainBox = () => {
+  const{ messages, getMessages, loading } = useContext(ChatContext);
 
-    const hideLoader = document.getElementById('loader').classList.add('hidden');
-}, 5000);
+  useEffect(()=> {
+    getMessages();
+  }, []);
+  console.log(messages);
 
-  return(
+  return (
   <div className="main__box">
 
-<Loader/>
-<ChatContextProvider>
-<ChatBubble/>
-</ChatContextProvider>
+{loading && <Loader/>}
+{messages.map(message =>
+<ChatBubble
+  message= {message}
+  key = {message._id}/>)}
   </div>
-  )
-}
+  );
+};
 
 export default MainBox;

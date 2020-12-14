@@ -5,26 +5,41 @@
   <li>Dark mode</li>  
   <li>Option to send img</li>
   <li>code of conduct on login page</li>
-  <li>However I used code what has more than 90% support (source:canIuse) would still need to create fallback for IE </li>
+  <li>However I used code what has more than 90% support (source : canIuse) would still need to create fallback for IE </li>
 </ol>
 
 ## my technology choices
- React because it is my go to technologies, and the one will be used at work.
-Sass because it is modular and it makes it easier to reuse code. For example I always create a flex mixin.
-I prefer to build up my own style-sheets, and unless it is required avoid css frameworks.
+ <strong>React  </strong> because it is my go to technology, and the one will be used at work.
 
-Created SVG elements using Figma in preparation for loader animation feature,
+ <strong>Sass  </strong> because it is modular and it makes it easier to reuse code. For example I always create a flex mixin.
+Building up my own style-sheets and avoiding CSS frameworks gives me the opportunity to discover new properties and tricks.
 
+Created  <strong>SVG </strong> elements using  <strong>Figma  </strong>in preparation for loader animation feature,
+
+## What I would do differently next time
+
+I would write more descriptive commits from the beginning.
 
 ## How I tackled the task
-Started with separating componenets, and creating a style sheet for each of them.
-ChatBubble: the area where the sent texts are appearing
-Mainbox: The main area whhat includes the ChatBubbles
-Inputbar: the form where user can type/send name and message
-Loader: animation showing up while messages loading
+Started with separating components, and creating a style sheet for each of them.
 
+<i>ChatBubble</i>: the area where the sent texts are appearing<br>
+<i>Mainbox</i>: The main area what includes the ChatBubbles<br>
+<i>Inputbar</i>: the form where user can type/send name and message<br>
+<i>Loader</i>: animation showing up while messages loading
 
+At the last interview I was advised to use Context for state management. However I haven't used it before, with the help of the documentation and a video guide,  got to set it up in a short time.  
 
+Finally set up fetch to GET and POST data. Add some event-handlers.
+
+ debug debug debug...
+
+Before running to pick up kids from school, I still managed to add the feature of displaying own messages with another style.
+
+Deployed it to Netlify and tested on different devices.
+
+I spent about 5 hours today on the challange, and now maybe another hour on the README.md
+***
 
 ## Sass autocompile
 

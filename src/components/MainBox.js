@@ -6,7 +6,7 @@ import { ChatContext } from '../context/ChatContext';
 import token from '../config';
 
 const MainBox = () => {
-  const{ messages, getMessages, loading } = useContext(ChatContext);
+  const{ messages, getMessages, loading, yourName } = useContext(ChatContext);
 
   useEffect(()=> {
     getMessages();
@@ -26,6 +26,7 @@ const MainBox = () => {
 {loading && <Loader/>}
 {messages.map(message =>
 <ChatBubble
+  yourName = {yourName}
   message= {message}
   key = {message._id}/>)}
   <div ref={messagesEndRef} ></div>

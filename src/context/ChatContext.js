@@ -20,7 +20,6 @@ const ChatContextProvider = (props)=> {
 
     const postMsg = async () => {
       const body = `{ "message": ${JSON.stringify(message)},"author":${JSON.stringify(yourName)} }`;
-      console.log(body);
       const options = {
         method: 'POST',
         headers: {
@@ -30,7 +29,6 @@ const ChatContextProvider = (props)=> {
       };
 
       const response = await fetch(url, options);
-      console.log(response);
       if (response.ok)
       getMessages();
       else {

@@ -11,7 +11,6 @@ const MainBox = () => {
   useEffect(()=> {
     getMessages();
   }, []);
-  console.log(messages);
 
   const messagesEndRef = useRef(null);
 

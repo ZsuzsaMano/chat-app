@@ -24,7 +24,7 @@ const InputBar = () => {
         <input type="text"id="yourname" onChange={handleOnChangeName} name="yourname" value={yourName} placeholder="Your name"/>
       </div>
       <div className="message">
-        <textarea name="message" id="message" placeholder="Message" onChange = {handleOnChangeMessage}></textarea>
+        <textarea name="message" id="message" value={message} placeholder="Message" onChange = {handleOnChangeMessage}></textarea>
         <button onClick= {handlePostMsg}>SEND</button>
       </div>
     </form>

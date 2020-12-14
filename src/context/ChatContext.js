@@ -29,9 +29,10 @@ const ChatContextProvider = (props)=> {
       };
 
       const response = await fetch(url, options);
-      if (response.ok)
-      getMessages();
-      else {
+      if (response.ok) {
+        getMessages();
+        setMessage('');
+      } else {
         console.log('error');
       }
     };

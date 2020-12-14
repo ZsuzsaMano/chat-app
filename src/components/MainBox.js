@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, useRef } from 'react';
 import ChatBubble from './ChatBubble';
 import Loader from './Loader';
 import ChatContextProvider from '../context/ChatContext';
@@ -13,6 +13,14 @@ const MainBox = () => {
   }, []);
   console.log(messages);
 
+  const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(scrollToBottom, [messages]);
+
   return (
   <div className="main__box">
 
@@ -21,6 +29,7 @@ const MainBox = () => {
 <ChatBubble
   message= {message}
   key = {message._id}/>)}
+  <div ref={messagesEndRef} ></div>
   </div>
   );
 };

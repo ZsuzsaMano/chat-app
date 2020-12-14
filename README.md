@@ -13,7 +13,7 @@
 </ol>
 
 ## my technology choices
-React, Sass,
+React, Sass, SVG, Figma
 
 ## How I tackled the task
 <ol>

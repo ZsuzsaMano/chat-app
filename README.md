@@ -1,19 +1,17 @@
 ## ideas for the app (might not have time for)
 <ol>
-<li>Dark mode</li>
-<li>animation on buttons</li>
-<li>"change name" button after name</li>
-<li>format date better</li>
-<li>Option to send img</li>
-<li>name to local storage</li>
-<li>write a better README.md  </li>
-<li>login</li>
-<li>code of conduct</li>
-  <li> fallback for IE </li>
+  <li>Dark mode</li>
+  <li>animation on buttons</li>
+  <li>format date better</li>
+  <li>Option to send img</li>
+  <li>write a better README.md</li>
+  <li>login / style my messages differnet from other user</li>
+  <li>code of conduct</li>
+  <li>fallback for IE </li>
 </ol>
 
 ## my technology choices
-React, Sass, SVG, Figma
+React, Sass, Figma to prepare SVG for animation, 
 
 ## How I tackled the task
 <ol>

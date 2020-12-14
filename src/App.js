@@ -6,9 +6,9 @@ import ChatContextProvider from './context/ChatContext';
 
 function App() {
   return (
-    <div className="App">
-        <MainBox/>
+    <div className="App"
         <ChatContextProvider>
+        <MainBox/>
         <InputBar/>
         </ChatContextProvider>
     </div>

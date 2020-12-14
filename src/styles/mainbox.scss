@@ -7,4 +7,6 @@
   border: 2px solid $chatborder;
   margin: 0 auto;
   padding: 0.5rem 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

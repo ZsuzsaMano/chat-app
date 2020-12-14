@@ -1,26 +1,30 @@
 ## ideas for the app (might not have time for)
 <ol>
-  <li>Dark mode</li>
-  <li>animation on buttons</li>
-  <li>format date better</li>
+  <li>login feature to select user name</li>
+  <li>format date better, use moment.js to see how long ago was message sent</li>
+  <li>Dark mode</li>  
   <li>Option to send img</li>
-  <li>write a better README.md</li>
-  <li>login / style my messages differnet from other user</li>
-  <li>code of conduct</li>
-  <li>fallback for IE </li>
+  <li>code of conduct on login page</li>
+  <li>However I used code what has more than 90% support (source:canIuse) would still need to create fallback for IE </li>
 </ol>
 
 ## my technology choices
-React, Sass, Figma to prepare SVG for animation, 
+ React because it is my go to technologies, and the one will be used at work.
+Sass because it is modular and it makes it easier to reuse code. For example I always create a flex mixin.
+I prefer to build up my own style-sheets, and unless it is required avoid css frameworks.
+
+Created SVG elements using Figma in preparation for loader animation feature,
+
 
 ## How I tackled the task
-<ol>
-<li> setting up react, creating folders/files </li>
-<li> Basic HTML</li>
-<li>Basic CSS</li>
-<li>details of CSS + loader</li>
-<li>getting values from form, saving in context</li>
-</ol>
+Started with separating componenets, and creating a style sheet for each of them.
+ChatBubble: the area where the sent texts are appearing
+Mainbox: The main area whhat includes the ChatBubbles
+Inputbar: the form where user can type/send name and message
+Loader: animation showing up while messages loading
+
+
+
 
 ## Sass autocompile
 

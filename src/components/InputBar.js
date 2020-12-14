@@ -19,15 +19,15 @@ const InputBar = () => {
 
   return (
     <div>
-    <form action="" className="inputbar">
-      <div className="yourname">
-        <input type="text"id="yourname" onChange={handleOnChangeName} name="yourname" value={yourName} placeholder="Your name"/>
-      </div>
-      <div className="message">
-        <textarea name="message" id="message" value={message} placeholder="Message" onChange = {handleOnChangeMessage}></textarea>
-        <button onClick= {handlePostMsg}>SEND</button>
-      </div>
-    </form>
+      <form action="" className="inputbar">
+        <div className="yourname">
+          <input type="text"id="yourname" onChange={handleOnChangeName} name="yourname" value={yourName} placeholder="Your name"/>
+        </div>
+        <div className="message">
+          <textarea name="message" id="message" value={message} placeholder="Message" onChange = {handleOnChangeMessage}></textarea>
+          <button onClick= {handlePostMsg}>SEND</button>
+        </div>
+      </form>
     </div>
   );
 };

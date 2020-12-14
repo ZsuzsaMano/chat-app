@@ -23,13 +23,13 @@ const MainBox = () => {
   return (
   <div className="main__box">
 
-{loading && <Loader/>}
-{messages.map(message =>
-<ChatBubble
-  yourName = {yourName}
-  message= {message}
-  key = {message._id}/>)}
-  <div ref={messagesEndRef} ></div>
+    {loading && <Loader/>}
+    {messages.map(message =>
+      <ChatBubble
+        yourName = {yourName}
+        message= {message}
+        key = {message._id}/>)}
+      <div ref={messagesEndRef} ></div>
   </div>
   );
 };
